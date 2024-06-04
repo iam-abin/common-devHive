@@ -1,28 +1,22 @@
-to create and publish an npm package,
+# @abijobportal/common
 
-create a folder common,
-npm init
+[![npm version](https://badge.fury.io/js/@abijobportal%2Fcommon.svg)](https://badge.fury.io/js/@abijobportal%2Fcommon)
 
-give name to the package, eg:- @abijobportal/common
-git init
-git add .
-git commit -m "initial commit"
-npm login (type it if not alerady loggied) 
-then, 
-npm publish --access public ("--access public" will only in first publish )
+## Overview
 
-next time,
+`@abijobportal/common` is a collection of useful middleware, utilities, and error handling mechanisms designed for microservice-based web applications. It provides functionalities such as JWT validation, error handling, Kafka topics management, and more, aiming to streamline the development process for microservices connecting candidates and recruiters.
 
-npm version patch (to update version)
-npm run build
-npm publish
+## Features
 
-or we can automate using following script in package.json
+- **JWT Validation**: Securely validate JSON Web Tokens (JWT) between services to ensure authorized access.
+- **Error Handling**: Robust error handling mechanisms to streamline debugging and error resolution.
+- **Kafka Topics**: Simplified management of Kafka topics, enabling efficient communication between microservices.
+- **Middleware**: Collection of middleware functions to enhance request processing and streamline development.
 
-1. "scripts": {
-    "clear": "del ./build/*",
-    "build": "npm run clear && tsc",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
-  }
+## License
 
-  2. npm run pub
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any questions or inquiries, please feel free to contact us at [ajayzyan100@gmail.com](mailto:ajayzyan100@gmail.com).
