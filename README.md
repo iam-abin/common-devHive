@@ -16,7 +16,3 @@
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any questions or inquiries, please feel free to contact us at [ajayzyan100@gmail.com](mailto:ajayzyan100@gmail.com).
