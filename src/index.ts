@@ -6,22 +6,19 @@
 export * from "./errors/bad-request-error";
 export * from "./errors/custom-error";
 export * from "./errors/database-connection-error";
+export * from "./errors/forbidden.error";
 export * from "./errors/not-authorized-error";
 export * from "./errors/not-found-error";
 export * from "./errors/request-validation-error";
 
-export * from "./middlewares/current-user-admin";
-export * from "./middlewares/current-user-candidate"
-export * from "./middlewares/current-user-recruiter";
-
+export * from "./utils/constants"
 export * from "./utils/verifyJwt"
 
+export * from "./types/role"
+
+export * from "./middlewares/auth.middleware";
+export * from "./middlewares/checkCurrentUser.middleware";
 export * from "./middlewares/error-handler";
-
-export * from "./middlewares/require-auth-admin";
-export * from "./middlewares/require-auth-candidate";
-export * from "./middlewares/require-auth-recruiter";
-
 export * from "./middlewares/validate-request";
 
 export * from "./events/topics";

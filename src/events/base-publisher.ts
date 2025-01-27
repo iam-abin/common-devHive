@@ -32,7 +32,7 @@ export abstract class KafkaPublisher<T extends Event>{
             return result;
         } catch (error:any) {
 
-            console.log("error occured in event publish",error);
+            console.log("Error occured in event publish: ",error);
             throw new Error(error)
         }finally{
 
